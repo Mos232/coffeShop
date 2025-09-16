@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffe Shop</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="/media/w-coffee-blog-2-opt-1.jpg.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- start logo & menu bootstrap-->
+    <div class="bg container col-11 col-md-11">
+      <!-- نوار ناوبری بهبود یافته -->
+      <nav class="navbar navbar-expand-lg bg-success-subtle py-3">
+        <div class="container">
+          <!-- لوگو -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="/media/Untitled-1 (1).png"
+              alt="لوگوی کافه"
+              class="img-fluid img-thumbnail"
+              style="max-height: 50px"
+            />
+          </a>
+          <form action="" class="col-3 me-5 border border-2 p-2 bg-info-subtle">
+            <div class="d-flex flex-row gap-1 bg-danger-subtle col-12">
+              <img src="/media/جستجو2.jpeg" alt="" class="img-fluid col-1" />
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="جستجو"
+                class="col-10 rounded-2 form-control"
+              />
+            </div>
+          </form>
+
+          <!-- دکمه همبرگر برای موبایل -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- بخش منو -->
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#principle">صفحه اصلی</a>
+              </li>
+
+              <!-- منوی آبشاری -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  منو
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">نوشیدنی‌ها</a></li>
+                  <li><a class="dropdown-item" href="#">قهوه‌ها</a></li>
+                  <li><a class="dropdown-item" href="#">درباره کافه</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about_us">معرفی</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#branch">شعبه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#coffe">قهوه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tea">دمنوش‌ها</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#article">مقالات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comment">نظرات مشتریان</a>
+              </li>
+            </ul>
+
+            <!-- بخش ورود/ثبت‌نام -->
+            <div class="d-flex">
+              <a href="#" class="text-decoration-none text-danger-emphasis">
+                <span>ورود</span><span>/</span><span>ثبت‌نام</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- بخش محتوای زیر نوار ناوبری -->
+      <div
+        class="d-flex flex-column align-items-center animate__animated animate__fadeInLeft bg-success-subtle rounded-2 p-4 w-50 mx-auto mt-5"
+      >
+        <span class="fw-bolder fs-5 mb-3 text-center">
+          لحظه ای آرامش بخش با قهوه ای که براتون خاطره می سازه
+        </span>
+        <button class="btn btn-outline-secondary text-capitalize">
+          مشاهده منو
+        </button>
+      </div>
+    </div>
+
+    <!-- end logo-->
+
+    <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <!-- start swiper1-->
+    <div class="fixed-container" id="drinks">
+      <div class="swiper myFixedSwiper3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product-image">
+              <img src="/media/1.webp" alt="" style="width: 200px" />
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">اسپرسو</h3>
+              <div class="product-price">25,000 ریال</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-image">
+              <img src="/media/6.webp" alt="" style="width: 150px" />
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">کاپوچینو</h3>
+              <div class="product-price">30,000 ریال</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-image"><img src="/media/10.webp" alt="" /></div>
+            <div class="product-details">
+              <h3 class="product-name">قهوه بزرگ</h3>
+              <div class="product-price">30,000 ریال</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-image">
+              <img src="/media/11.webp" alt="" style="width: 135px" />
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">هات چاکلت</h3>
+              <div class="product-price">30,000 ریال</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-image"><img src="/media/12.webp" alt="" /></div>
+            <div class="product-details">
+              <h3 class="product-name">چای سیاه</h3>
+              <div class="product-price">30,000 ریال</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-image"><img src="/media/5.webp" alt="" /></div>
+            <div class="product-details">
+              <h3 class="product-name">کورتادو</h3>
+              <div class="product-price">30,000 ریال</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-image">
+              <img src="/media/8 لاته.webp" alt="" />
+            </div>
+            <div class="product-details">
+              <h3 class="product-name">لاته</h3>
+              <div class="product-price">32,000 ریال</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-image"><img src="/media/9.webp" alt="" /></div>
+            <div class="product-details">
+              <h3 class="product-name">موکا</h3>
+              <div class="product-price">35,000 ریال</div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-image"><img src="/media/3.webp" alt="" /></div>
+            <div class="product-details">
+              <h3 class="product-name">آمریکانو</h3>
+              <div class="product-price">28,000 ریال</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!--end swiper-->
+
+    <!-- start section 3-->
+    <section>
+      <div
+        class="faza d-flex flex-column justify-content-evenly align-items-center container mt-2 col-12 gap-5 d-sm-flex flex-sm-column d-lg-flex flex-lg-row justify-content-lg-evenly gap-lg-2"
+      >
+        <div
+          class="d-flex flex-column col-12 p-2 justify-content-center align-items-center col-sm-12 col-lg-6"
+        >
+          <img
+            src="/media/w-coffee-blog-3-opt-1.jpg-1.png"
+            alt=""
+            class="img-fluid img-thumbnail faza w-50"
+          />
+          <p class="mt-3 fw-normal fs-5 cadr rounded-2 text-sm-center">
+            فضایی دلننشین کافه و فضای مناسب برای بازی کودکان خاطره ای به یاد
+            ماندنی برای خود و خوانواده محترمتان فراهم می سازد
+          </p>
+        </div>
+        <div
+          class="d-flex flex-column col-12 p-2 justify-content-center align-items-center col-sm-12 mb-sm-3 col-lg-6"
+        >
+          <img
+            src="/media/skitterphoto-574-default.jpg"
+            alt=""
+            class="img-fluid img-thumbnail faza w-75"
+          />
+          <p class="mt-3 fw-normal fs-5 cadr rounded-2">
+            فضایی دلنشین برای خانواده محترمتان به همراه کادر مجرب
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- end section 3 that contain two part each oher-->
+
+    <!-- start section4: interiure space of coff with comment about it-->
+
+    <section id="about_us">
+      <div
+        class="dakheli bg-dark-subtle d-flex flex-row col-12 container justify-content-evenly align-items-center gap-2 mt-2 d-lg-flex flex-lg-row gap-1 d-sm-flex flex-sm-column gap-sm-2"
+      >
+        <div class="col-12 bg-success-subtle col-lg-6 col-sm-12">
+          <h4 class="fs-1 fw-bolder dakheli">کافه ساراما</h4>
+          <div class="d-flex flex-row gap-1 justify-content-between">
+            <h5 class="fs-3 fw-light mt-3">افتخار با شما بودن</h5>
+            <div class="col-8">
+              <svg width="30" height="70" viewBox="0 0 24 24">
+                <polygon
+                  points="12,2 15,9 22,9 16,14 18,22 12,17 6,22 8,14 2,9 9,9"
+                  fill="gold"
+                  stroke="darkgoldenrod"
+                />
+              </svg>
+              <svg width="30" height="70" viewBox="0 0 24 24">
+                <polygon
+                  points="12,2 15,9 22,9 16,14 18,22 12,17 6,22 8,14 2,9 9,9"
+                  fill="gold"
+                  stroke="darkgoldenrod"
+                />
+              </svg>
+              <svg width="30" height="70" viewBox="0 0 24 24">
+                <polygon
+                  points="12,2 15,9 22,9 16,14 18,22 12,17 6,22 8,14 2,9 9,9"
+                  fill="gold"
+                  stroke="darkgoldenrod"
+                />
+              </svg>
+              <svg width="30" height="70" viewBox="0 0 24 24">
+                <polygon
+                  points="12,2 15,9 22,9 16,14 18,22 12,17 6,22 8,14 2,9 9,9"
+                  fill="gold"
+                  stroke="darkgoldenrod"
+                />
+              </svg>
+              <svg width="30" height="70" viewBox="0 0 24 24">
+                <polygon
+                  points="12,2 15,9 22,9 16,14 18,22 12,17 6,22 8,14 2,9 9,9"
+                  fill="gold"
+                  stroke="darkgoldenrod"
+                />
+              </svg>
+            </div>
+          </div>
+          <p
+            class="fs-5 fw-bold mt-3 p-2 border border-2 rounded-2 dakheli text-white col-9"
+          >
+            من عاشق قهوه هستم. گاهی اوقات شب‌ها با فکر فنجانی که صبح می‌خواهم
+            بنوشم هیجان‌زده می‌شوم. قهوه دلیلی برای بیدار شدن‌است. البته دلایل
+            دیگری هم وجود دارد، اما قهوه مشوق من است-آنی کلارک.
+          </p>
+        </div>
+        <div class="col-12 bg-info col-lg-6 col-sm-12">
+          <a href="#" class="col-12 bg-danger text text-decoration-none">
+            <img
+              src="/media/فضای داخلی کافه3.webp"
+              alt=""
+              class="img-fluid img-thumbnail col-10"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- end  section4: interiure space of coff with comment about it-->
+
+    <!-- start shobe & section 5-->
+    <div class="riv mb-3 container" id="branch">
+      <section>
+        <h4 class="col-2 mt-4 mb-3 bg-dark-subtle">شعب قهوه ساراما</h4>
+        <div
+          class="shobe d-flex flex-column col-12 container gap-2 justify-content-evenly align-items-center d-lg-flex flex-lg-row gap-lg-2 d-sm-flex flex-sm-column gap-sm-2"
+        >
+          <div
+            class="col-12 bg-success-subtle border border-2 rounded-2 d-flex flex-column position-relative shobe-container col-lg-4 col-sm-12 mx-sm-auto col-md-12"
+          >
+            <img
+              src="/media/کافه-های-میرداماد-2.jpg"
+              class="img-fluid img-thumbnail col-12 shobe"
+              style="width: 428px; height: 428px"
+            />
+          </div>
+          <div
+            class="col-12 bg-success-subtle border border-2 rounded-2 d-flex flex-column position-relative shobe1-container col-lg-4 col-sm-12 mx-sm-auto col-md-12"
+          >
+            <img
+              src="/media/فضای داخلی کافه3.webp"
+              class="img-fluid col-12 shobe img-thumbnail"
+              style="width: 428px; height: 428px"
+            />
+          </div>
+          <div
+            class="col-12 bg-success-subtle border border-2 rounded-2 d-flex flex-column position-relative shobe2-container col-lg-4 col-sm-12 mx-sm-auto col-md-12"
+          >
+            <img
+              src="/media/کافه-های-میرداماد-4.jpg"
+              class="img-fluid col-12 shobe img-thumbnail"
+              style="width: 428px; height: 428px"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--end shobe & section 5-->
+
+    <!--start section 6 that is swiper story of production-->
+
+    <div class="container mt-3" id="coffe">
+      <div class="swiper mySwiper-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/media/2.webp" alt="" />
+              <span>قهوه </span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/media/9.webp" alt="" />
+              <span>کاپوچینو</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/media/12.webp" alt="" />
+              <span>چای سیاه</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/media/skitterphoto-2952-thumbnail.jpg" alt="" />
+              <span>اسپرسو</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/media/6.webp" alt="" />
+              <span>لاته</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/media/5.webp" alt="" />
+              <span>ماکیاتو</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="/media/4.webp" alt="" />
+              <span>امریکانو</span>
+            </a>
+          </div>
+
+          <!-- اضافه کردن اسلایدهای بیشتر -->
+        </div>
+        <div class="swiper-pagination myswiper-pagination-2"></div>
+      </div>
+    </div>
+
+    <!--end section 6 that is swiper story of production-->
+
+    <!-- start section 7 that is grid for drinking some thing-->
+    <div class="container mt-3" id="tea">
+      <h3
+        class="text-center border border-1 bg-success-subtle mb-3 text-black rounded-2 col-6 mx-auto"
+      >
+        چای و دمنوش ها
+      </h3>
+      <div
+        class="row me-2 drink d-sm-flex flex-sm-column gap-sm-2 d-md-flex flex-md-row gap-md-1"
+      >
+        <div
+          class="col-sm border border-1 border-danger-subtle position-relative col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <span class="discount-badge">5% تخفیف</span>
+            <img src="/media/چای سیاه.webp" alt="" class="img-fluid" />
+            <h5 class="gol">چای سیاه</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="text-white cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-sm border border-1 border-danger-subtle col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/آویشن.webp" alt="" class="img-fluid" />
+            <h5 class="gol">آویشن</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-sm border border-2 border-danger-subtle position-relative col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <span class="discount-badge">5% تخفیف</span>
+            <img src="/media/اسطوخودوس.webp" alt="" class="img-fluid" />
+            <h5 class="gol">اسطوخودوس</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="col-sm border border-2 border-danger-subtle col-sm-12 col-md-2 flex-md-grow-1"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/بابونه.webp" alt="" class="img-fluid" />
+            <h5 class="gol">بابونه</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div
+        class="row me-2 drink d-sm-flex flex-sm-column gap-sm-2 d-md-flex flex-md-row gap-md-1"
+      >
+        <div
+          class="col-sm border border-1 border-danger-subtle col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/رازیانه.webp" alt="" class="img-fluid" />
+            <h5 class="gol">رازیانه</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-sm border border-2 border-danger-subtle col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/به لیمو.webp" alt="" class="img-fluid" />
+            <h5 class="gol">به لیمو</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-sm border border-2 border-danger-subtle col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/رزماری.webp" alt="" class="img-fluid" />
+            <h5 class="gol">رزماری</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="col-sm border border-1 border-danger-subtle col-sm-12 col-md-2 flex-md-grow-1"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/زعفران.webp" alt="" class="img-fluid" />
+            <h5 class="gol">زعفران</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div
+        class="row me-2 drink d-sm-flex flex-sm-column gap-sm-2 d-md-flex flex-md-row gap-md-1"
+      >
+        <div
+          class="col-sm border border-1 border-danger-subtle col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/زنجبیل.webp" alt="" class="img-fluid" />
+            <h5 class="gol">زنجبیل</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-sm border border-2 border-danger-subtle position-relative col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <span class="discount-badge">10% تخفیف</span>
+            <img src="/media/نعناع فلفلی.webp" alt="" class="img-fluid" />
+            <h5 class="gol">نعناع فلفلی</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-sm border border-2 border-danger-subtle col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/نعناع.webp" alt="" class="img-fluid" />
+            <h5 class="gol">نعناع</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="col-sm border border-2 border-danger-subtle position-relative col-sm-12 col-md-2 flex-md-grow-1"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <span class="discount-badge">15% تخفیف</span>
+            <img src="/media/پونه.webp" alt="" class="img-fluid" />
+            <h5 class="gol">پونه</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div
+        class="row me-2 drink d-sm-flex flex-sm-column gap-sm-2 d-md-flex flex-md-row gap-md-1"
+      >
+        <div
+          class="col-sm border border-2 border-danger-subtle col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/گزنه.webp" alt="" class="img-fluid" />
+
+            <h5 class="gol">گزنه</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-sm border border-1 border-danger-subtle col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/گل محمدی.webp" alt="" class="img-fluid" />
+            <h5 class="gol">گل محمدی</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="col-sm border border-2 border-danger-subtle col-sm-12 col-md-3"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <img src="/media/هسته خرما.webp" alt="" class="img-fluid" />
+            <h5 class="gol">هسته خرما</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="col-sm border border-2 position-relative col-sm-12 col-md-2 flex-md-grow-1"
+        >
+          <a
+            href="#"
+            class="d-flex flex-column justify-content-center align-items-center gap-1 text-decoration-none"
+          >
+            <span class="discount-badge">5% تخفیف</span>
+
+            <img src="/media/گل گاو زبان.webp" alt="" class="img-fluid" />
+            <h5 class="gol">گل گاو زبان</h5>
+            <div
+              class="d-flex flex-row justify-content-between gap-4 align-items-center"
+            >
+              <span class="cost">قیمت:</span>
+              <span class="rounded-2 bg-danger text-white">125هزار تومان</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end section 7 that is grid for drinking some thing-->
+
+    <!-- start article section 7-->
+
+    <article id="article">
+      <h4
+        class="container my-5 bg-opacity-75 text-bg-success col-2 text-center"
+      >
+        مجله قهوه
+      </h4>
+      <div
+        class="article container col-12 mt-3 border border-1 border-light-subtle rounded-1 d-flex flex-row gap-2 d-sm-flex flex-sm-column gap-sm-2 d-lg-flex flex-lg-row gap-lg-2"
+      >
+        <div class="child col-4 rounded-1 col-sm-12 col-lg-4">
+          <a
+            href="#"
+            class="col-12 text-decoration-none d-flex flex-column justify-content-center align-items-center gap-2 text-black"
+          >
+            <img
+              src="/media/article1.jpg"
+              alt=""
+              class="img-fluid col-10 mt-4"
+            />
+            <h4>اسپرسو در حال تغییر است ؟</h4>
+            <p>
+              قهوه تخصصی، اسپرسو را متحول کرده است. بسیاری از برشته‌کاران و
+              کافه‌ها، به دلیل تمایل صنعت به قهوه‌های میوه‌ای، شیرین‌تر و با
+              اسیدیته برجسته، از برشتگی‌های سنتی اسپرسو فاصله گرفته‌اند.
+              ترکیب‌های تیره، با عطر و طعم برشته و سنگین از روبوستا که در اواخر
+              دهه ۱۹۹۰ و اوایل ۲۰۰۰ بسیار رایج بودند، عمدتاً جای خود را به
+              قهوه‌های با درجه برشت ملایم تا روشن و گزینه‌های تک‌خاستگاه
+              داده‌اند.
+            </p>
+          </a>
+        </div>
+        <div
+          class="child col-4 boredr border-end border-start col-sm-12 col-lg-4"
+        >
+          <a
+            href="#"
+            class="col-12 text-decoration-none d-flex flex-column justify-content-center align-items-center gap-2 text-black"
+          >
+            <img
+              src="/media/article3.jpg"
+              alt=""
+              class="img-fluid col-10 mt-4"
+            />
+            <h4>رسپی برتر دم‌آوری قهوه با اروپرس</h4>
+            <p class="article">
+              اروپرس دم‌آوری قهوه را متحول کرده و روش سریع و چندکاره‌ای برای
+              تهیه‌ی یک فنجان خوشمزه قهوه فراهم کرده است. قابل حمل بودن و سادگی
+              آن، این وسیله را به یکی از محبوب‌ترین ابزارها در بین علاقه‌مندان
+              به قهوه در سراسر جهان تبدیل کرده است. چه یک باریستای حرفه‌ای باشید
+              و چه تازه‌کار در دنیای قهوه، تسلط بر ارسپی برتر دم‌آوری قهوه با
+              اروپرس می‌پردازیم که به شما کمک می‌کنند یک فنجان بی‌نقص درست کنید.
+            </p>
+          </a>
+        </div>
+        <div class="child col-4 d-flex flex-row col-sm-12 col-lg-4">
+          <a
+            href="#"
+            class="col-12 text-decoration-none d-flex flex-column justify-content-center align-items-center gap-2 text-black"
+          >
+            <img
+              src="/media/article5.jpg"
+              alt=""
+              class="img-fluid col-6 mt-4"
+            />
+            <h4>قهوه Flat Red: چیست و از کجا آمده است؟</h4>
+            <p>
+              فلت رد، یک نوشیدنی ترکیبی منحصر به فرد است که از اسپرسو و
+              آبمیوه‌های بخارزده تشکیل شده و ریشه در اوکراین دارد. این نوشیدنی
+              که توسط وادیم گرانوسکی در کافه‌های او ابداع شده، به سرعت در
+              اوکراین محبوب شد و پتانسیل تبدیل شدن به یک ترند جهانی را دارد. از
+              ترکیب نوآورانه اسپرسو و آب انار با آب پرتقال تازه بخارزده، فبه‌ای
+              متفاوت از نوشیدنی‌های سنتی قهوه ارائه می‌دهد.
+            </p>
+          </a>
+        </div>
+      </div>
+    </article>
+    <!-- end article section 7-->
+
+    <!-- start comment of client and start section 8-->
+    <h3 class="my-3 text-black" id="comment">نظریات مشتریان</h3>
+    <div class="testimonials-container mx-auto container">
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="neon-border"></div>
+          <div class="rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="quote">
+            طراحی سایت شما واقعاً تحسین‌برانگیز بود! مشتریانم همیشه در مورد ظاهر
+            حرفه‌ای و تجربه کاربری عالی آن نظر می‌دهند.
+          </p>
+          <div class="user-info">
+            <div class="avatar-container">
+              <img
+                src="/media/نظریات مشتریان1.jpg"
+                alt=" سارا محمدی"
+                class="avatar"
+              />
+              <div class="verified-badge">✓</div>
+            </div>
+            <div class="user-details">
+              <span class="user-name"> سارا محمدی</span>
+              <span class="user-title">مدیرعامل شرکت دانش‌پرداز</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="neon-border"></div>
+          <div class="rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="quote">
+            سرعت بارگذاری و عملکرد سایت شما فوق‌العاده است. کاربران ما به‌راحتی
+            می‌توانند با پلتفرم شما کار کنند و این ارزش بزرگی برای کسب‌وکار
+            ماست.
+          </p>
+          <div class="user-info">
+            <div class="avatar-container">
+              <img
+                src="/media/نظریات مشتریان 2.jpg"
+                alt=" علی رضایی"
+                class="avatar"
+              />
+              <div class="verified-badge">✓</div>
+            </div>
+            <div class="user-details">
+              <span class="user-name"> علی رضایی</span>
+              <span class="user-title">مدیر فروش آنلاین</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="neon-border"></div>
+          <div class="rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="quote">
+            از پشتیبانی سریع و حرفه‌ای تیم شما بسیار راضی هستم. هر درخواست یا
+            مشکلی که داشته‌ایم در کمترین زمان ممکن حل شده است.
+          </p>
+          <div class="user-info">
+            <div class="avatar-container">
+              <img
+                src="/media/نظریات مشتریان 3.jpg"
+                alt="امیرحسین فردوسی"
+                class="avatar"
+              />
+              <div class="verified-badge">✓</div>
+            </div>
+            <div class="user-details">
+              <span class="user-name">امیرحسین فردوسی</span>
+              <span class="user-title">مدیر فنی استارتاپ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end comment of client and end section 8-->
+
+    <!-- start the frequent questions section 9-->
+    <h3 class="container col-2 question">نظریات مشتریان</h3>
+    <div class="container mt-5 border border-1 col-12 question">
+      <div class="accordion" id="accordionExample">
+        <!-- بخش اول -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              1. آیا دمای آب هنگام دم کردن قهوه مهم است؟
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              بله، دمای ایده‌آل برای عصاره‌گیری قهوه حدود 92 تا 96 درجه
+              سانتی‌گراد است. دمای کمتر باعث عصاره‌گیری ناقص و طعم ضعیف می‌شود.
+            </div>
+          </div>
+        </div>
+        <!-- بخش دوم -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              چرا قهوه من مزه خاک یا چوب می‌دهد؟
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              احتمال دارد قهوه بیش‌ازحد رُست شده باشد یا دانه‌ها کهنه و بی‌کیفیت
+              باشند.
+            </div>
+          </div>
+        </div>
+
+        <!-- بخش سوم -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              تفاوت قهوه موج سوم با قهوه تجاری چیه؟
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              قهوه موج سوم روی منشأ، روش رُست و کیفیت تمرکز داره. در حالی که
+              قهوه تجاری فقط به حجم و طعم ساده فکر می‌کنه.
+            </div>
+          </div>
+        </div>
+
+        <!-- بخش چهارم-->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingfour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsefour"
+              aria-expanded="false"
+              aria-controls="collapsefour"
+            >
+              آیا میزان کافئین در قهوه بستگی به نوع رُست دارد؟
+            </button>
+          </h2>
+          <div
+            id="collapsefour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingfour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              بله. رُست روشن معمولاً کافئین بیشتری نسبت به رُست تیره دارد.
+            </div>
+          </div>
+        </div>
+
+        <!-- بخش پنجم-->
+        <div class="accordion-item sd">
+          <h2 class="accordion-header" id="headingfive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsefive"
+              aria-expanded="false"
+              aria-controls="collapsefive"
+            >
+              چرا اسپرسوی من خامه (کرم) ندارد؟
+            </button>
+          </h2>
+          <div
+            id="collapsefive"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingfive"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              دلایل ممکن: دمای پایین، فشار پایین دستگاه، یا تازگی کم دانه‌ها.
+            </div>
+          </div>
+        </div>
+        <!-- بخش ششم-->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingsix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsesix"
+              aria-expanded="false"
+              aria-controls="collapsesix"
+            >
+              قهوه‌ی آسیاب‌شده تا چند روز ماندگاری دارد؟
+            </button>
+          </h2>
+          <div
+            id="collapsesix"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingsix"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              بهترین زمان مصرف تا ۲ هفته پس از آسیاب است، ولی در شرایط خلأ و
+              بدون نور و رطوبت.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end  the frequent questions & end section 9-->
+
+    <!-- start footer that is section 9-->
+    <footer class="cafe-footer pt-5 mt-3 container">
+      <div class="container">
+        <div class="row g-4">
+          <!-- اطلاعات تماس -->
+          <div class="col-md-6 col-lg-3">
+            <h5 class="footer-title">کافه ساراما</h5>
+            <p class="mb-3">
+              <i class="bi bi-geo-alt-fill me-2"></i>
+              تهران، خیابان ولیعصر، پلاک ۱۲۳۴
+            </p>
+            <p class="mb-3">
+              <i class="bi bi-telephone-fill me-2"></i>
+              ۰۲۱-۱۲۳۴۵۶۷۸
+            </p>
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i>
+              info@danecafe.com
+            </p>
+          </div>
+
+          <!-- ساعت کاری -->
+          <div class="col-md-6 col-lg-3">
+            <h5 class="footer-title">ساعت کاری</h5>
+            <p class="mb-2">
+              <i class="bi bi-clock-fill me-2"></i>
+              شنبه تا پنجشنبه: ۸:۰۰ تا ۲۳:۰۰
+            </p>
+            <p>
+              <i class="bi bi-clock-fill me-2"></i>
+              جمعه‌ها: ۹:۰۰ تا ۰۰:۰۰
+            </p>
+          </div>
+
+          <!-- لینک‌های سریع -->
+          <div class="col-md-6 col-lg-3">
+            <h5 class="footer-title">دسترسی سریع</h5>
+            <a href="#" class="footer-link">
+              <i class="bi bi-cup-hot me-2"></i> منوی کافه
+            </a>
+            <a href="#" class="footer-link">
+              <i class="bi bi-info-circle me-2"></i> درباره ما
+            </a>
+            <a href="#" class="footer-link">
+              <i class="bi bi-calendar-check me-2"></i> رزرو میز
+            </a>
+            <a href="#" class="footer-link">
+              <i class="bi bi-images me-2"></i> گالری تصاویر
+            </a>
+          </div>
+
+          <!-- شبکه‌های اجتماعی -->
+          <div class="col-md-6 col-lg-3">
+            <h5 class="footer-title">ما را دنبال کنید</h5>
+            <div class="d-flex gap-3 mt-4">
+              <a href="#" class="social-icon text-white">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="social-icon text-white">
+                <i class="bi bi-telegram"></i>
+              </a>
+              <a href="#" class="social-icon text-white">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="#" class="social-icon text-white">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </div>
+
+            <!-- خبرنامه -->
+            <div class="mt-4">
+              <label for="newsletter" class="form-label"
+                >عضویت در خبرنامه</label
+              >
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="ایمیل شما"
+                />
+                <button class="btn btn-warning" type="button">
+                  <i class="bi bi-send"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- بخش کپی‌رایت -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="copyright text-center py-3">
+              <p class="mb-0">
+                © ۱۴۰۴ کلیه حقوق برای دانه‌کافه محفوظ است |
+                <a href="#" class="footer-link d-inline ms-2"
+                  >قوانین و مقررات</a
+                >
+                |
+                <a href="#" class="footer-link d-inline ms-2">حریم خصوصی</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer that is section 10-->
+
+    <!-- start comment-->
+    <button id="chat-button">💬</button>
+    <div id="chat-box">
+      <div class="chat-header">
+        <span>پرسش از کافه</span>
+        <button class="close-btn">×</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="message received">سلام! چه سوالی درباره کافه دارید؟</div>
+      </div>
+      <div class="chat-input">
+        <input
+          type="text"
+          id="message-input"
+          placeholder="پیام خود را بنویسید..."
+        />
+        <button id="send-btn">ارسال</button>
+      </div>
+    </div>
+
+    <!-- end comment-->
+
+    <!--start js swiper first-->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".myFixedSwiper3", {
+          direction: "horizontal",
+          slidesPerView: 3,
+          spaceBetween: 30,
+          grabCursor: true,
+          scrollbar: {
+            el: ".swiper-scrollbar",
+            draggable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            320: { slidesPerView: 1.2 },
+            576: { slidesPerView: 2 },
+            992: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 },
+          },
+        });
+      });
+    </script>
+
+    <!--end swiper first-->
+
+    <!-- start js 2 that is story-->
+    <script>
+      const swiper2 = new Swiper(".mySwiper-2", {
+        slidesPerView: "auto",
+        spaceBetween: 15,
+        freeMode: true,
+      });
+    </script>
+    <!-- end js 2 that is story-->
+
+    <!-- link js to bootstrap-->
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- link js to bootstrap-->
+
+    <!-- start js section 8 that is comment of client-->
+    <script>
+      // Add hover sound effect
+      const cards = document.querySelectorAll(".testimonial-card");
+
+      cards.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          const audio = new Audio(
+            "https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3"
+          );
+          audio.volume = 0.3;
+          audio.play();
+        });
+      });
+    </script>
+
+    <!-- end js section 8 that is comment of client-->
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>

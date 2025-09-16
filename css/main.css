@@ -1,0 +1,743 @@
+* {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  box-sizing: border-box;
+  font-family: "IRAN Rounded";
+}
+@font-face {
+  font-family: "IRAN Rounded";
+  src: url(/IRAN\ Rounded/webfonts/fonts/woff);
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --bg_color: #734436;
+  --bg_color2: rgba(165, 42, 42, 0.699);
+  --bg_color3: #f5e5d9;
+  --bg_color4: olive;
+  --bg_color5: #e8d7d1;
+  --shadow: 10px 10px 15px blueviolet;
+  --neon-primary: #00f5a7;
+  --neon-secondary: #00d9f5;
+  --neon-accent: #ff2079;
+  --gold-light: #ffd700;
+  --gold-dark: #ff8c00;
+}
+
+.bg {
+  background-image: url(/media/w-coffee-parallax-scroll-2-opt.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+span.aramesh {
+  color: #de3d0d;
+  box-shadow: 5px 5px 2px brown;
+  border: 8px wavy rgb(106, 4, 4);
+}
+button.aramesh {
+  color: whitesmoke;
+  background-color: #5d4037;
+  width: 160px;
+}
+div.aramesh {
+  position: absolute;
+  top: 400px;
+  left: 300px;
+}
+@keyframes customAnimation {
+  /* تغییر نام انیمیشن */
+  0% {
+    transform: translateX(-100%) rotate(0deg) scale(0.5); /* حرکت از چپ + کوچک */
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0) rotate(-15deg) scale(1); /* رسیدن به مرکز */
+    background-color: #9b59b6;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) rotate(360deg) scale(5); /* چرخش + بزرگ‌نمایی */
+    background-color: #e74c3c;
+    opacity: 0;
+  }
+}
+
+.customAnimation {
+  position: absolute;
+  animation-name: customAnimation; /* تطابق با نام جدید */
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; /* مقدار معتبر */
+  top: 250px;
+  left: 200px;
+  transform-origin: center; /* نقطه محور چرخش/بزرگ‌نمایی */
+}
+
+
+
+/* swiper 1*/
+.fixed-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-10px);
+}
+
+.product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: linear-gradient(45deg, #6f4e37, #8d6e63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.product-details {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-size: 1.6rem;
+  color: #5d4037;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #d4a017;
+  font-weight: 800;
+  text-align: center;
+  margin-top: auto;
+  padding: 12px;
+  background: rgba(212, 160, 23, 0.1);
+  border-radius: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #6f4e37 !important;
+  background: rgba(255, 255, 255, 0.9);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 24px !important;
+  font-weight: bold;
+}
+
+.swiper-scrollbar {
+  background: rgba(111, 78, 55, 0.1);
+  height: 6px;
+  bottom: 10px;
+}
+
+.swiper-scrollbar-drag {
+  background: #6f4e37;
+}
+div.product-image > img {
+  width: 400px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* end swiper*/
+/* start section 3*/
+p.cadr {
+  color: #6f4e37;
+  background-color: bisque;
+  box-shadow: 1px 10px 10px #df9e06;
+}
+
+img.faza:hover {
+  background-color: #e74c3c;
+  transform: rotate(5deg);
+}
+/* end section 3*/
+/* start section 4*/
+p.dakheli {
+  background: #a75012;
+}
+h4.dakheli {
+  color: #de990f;
+  background-color: #fff;
+}
+/*end section4*/
+
+/* start section 5 that is diffrent shobe*/
+
+div.riv {
+  background-image: url(/media/CAPPUCCINO-COFFEE.webp);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+}
+.shobe-container::before {
+  display: block;
+  width: 30%;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+
+  text-align: center;
+  content: " گیشا";
+  border: 3px dashed #74560a;
+  font-size: large;
+  font-weight: bold;
+  color: var(--bg_color);
+  border-radius: 15px;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.shobe1-container::before {
+  display: block;
+  width: 30%;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+
+  text-align: center;
+  content: "   استانبول";
+  border: 3px dashed #74560a;
+  font-size: large;
+  font-weight: bold;
+  color: var(--bg_color);
+  border-radius: 15px;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.shobe2-container::before {
+  display: block;
+  width: 30%;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+
+  text-align: center;
+  content: " میرداماد";
+  border: 3px dashed #74560a;
+  font-size: large;
+  font-weight: bold;
+  color: var(--bg_color);
+  border-radius: 15px;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+/* end section 5*/
+
+/* start section 6 that is story*/
+.mySwiper-2 {
+  width: 100%;
+}
+
+.mySwiper-2 .swiper-wrapper {
+  background-color: var(--bg_color);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.mySwiper-2 .swiper-slide {
+  width: 150px !important;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.mySwiper-2 .swiper-slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #b60909;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.mySwiper-2 .swiper-slide:hover img {
+  transform: scale(1.1);
+  object-fit: cover;
+}
+
+.mySwiper-2 .swiper-slide > a {
+  width: 100%;
+  text-decoration: none;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper-2 .swiper-slide > a > span {
+  color: white;
+  background-color: #d00a0a;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+
+  text-align: center;
+  width: 100%;
+}
+/*  end section 6 that is story*/
+
+/* start section 7 that is grid for drinking some thing*/
+div.drink {
+  background-color: var(--bg_color5);
+}
+span.cost {
+  color: white;
+  background-color: var(--bg_color4);
+  border-radius: 25%;
+}
+h5.gol {
+  color: black;
+}
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(45deg, #ff6b6b, #ff4757);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  transform: rotate(5deg);
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(5deg) scale(1);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
+}
+/* end section 7 that is grid for drinking some thing*/
+
+/* start section 8 that is article*/
+div.article {
+  background-color: #734436a1;
+}
+p.article {
+  text-align: justify;
+  text-indent: 1rem;
+}
+/* end section 8 that is article*/
+
+/* start section 8 that is comment of client about if your coffe*/
+.testimonials-container {
+  max-width: 1200px;
+  width: 90%;
+  padding: 2rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--neon-primary),
+    transparent
+  );
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 30px;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+}
+
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 245, 167, 0.1) 0%,
+    rgba(0, 217, 245, 0.1) 50%,
+    rgba(255, 32, 121, 0.1) 100%
+  );
+  z-index: -1;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 245, 167, 0.2), 0 0 15px var(--neon-primary),
+    0 0 30px var(--neon-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.rating {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.star {
+  color: var(--gold-light);
+  font-size: 1.5rem;
+  margin-left: 5px;
+  text-shadow: 0 0 5px var(--gold-dark);
+}
+
+.quote {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-style: italic;
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 25px;
+}
+
+.quote::before,
+.quote::after {
+  content: "";
+  font-size: 4rem;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  font-family: Georgia, serif;
+}
+
+.quote::before {
+  top: -20px;
+  left: -10px;
+}
+
+.quote::after {
+  bottom: -50px;
+  right: -10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.avatar-container {
+  position: relative;
+  margin-left: 15px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--neon-primary);
+  box-shadow: 0 0 10px var(--neon-primary);
+}
+
+.verified-badge {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: var(--neon-accent);
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  box-shadow: 0 0 8px var(--neon-accent);
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.user-title {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.neon-border {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 25px;
+  background: linear-gradient(
+    45deg,
+    var(--neon-primary),
+    var(--neon-secondary),
+    var(--neon-accent)
+  );
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.testimonial-card:hover .neon-border {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+}
+/* end section 8 that is comment of client about if your coffe*/
+/* start frequent question thai is start section 9*/
+div.question {
+  background-color: var(--bg_color);
+}
+h3.question {
+  background-color: var(--bg_color4);
+  color: black;
+  box-shadow: 5px 5px 10px #6f4e37;
+}
+
+/* end frequent question thai is start section 9*/
+
+/*<!--start footer that is section 10-->*/
+
+.cafe-footer {
+            background-color: #2c1c0f;
+            color: #fff;
+            border-top: 3px solid #d4a866;
+        }
+        .footer-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 2px;
+            background: #d4a866;
+        }
+        .social-icon {
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+        .social-icon:hover {
+            transform: translateY(-5px);
+            color: #d4a866 !important;
+        }
+        .footer-link {
+            color: #bbb;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .footer-link:hover {
+            color: #d4a866;
+            padding-right: 5px;
+        }
+        .copyright {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+/*<!--end footer that is section 10-->
+
+/* start comment*/
+   #chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--bg_color4);
+            color:white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        #chat-box {
+            display: none;
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+            flex-direction: column;
+            z-index: 999;
+        }
+        .chat-header {
+            background-color: #5D4037;
+            color: white;
+            padding: 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .chat-messages {
+            flex-grow: 1;
+            padding: 15px;
+            overflow-y: auto;
+        }
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        #message-input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            outline: none;
+        }
+        #send-btn {
+            margin-right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .message {
+            margin: 10px 0;
+            padding: 8px 12px;
+            border-radius: 18px;
+            max-width: 80%;
+        }
+        .received {
+            background-color: #f1f1f1;
+            align-self: flex-start;
+        }
+        .sent {
+            background-color: #4CAF50;
+            color: white;
+            align-self: flex-end;
+            margin-left: auto;
+        }
